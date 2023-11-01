@@ -3,7 +3,6 @@ import {
   Img,
   Input
 } from "components";
-
 const ClientsAddress = () => {
   return (
     <div className="flex flex-col items-start justify-start p-[1.5rem] gap-[1.5rem] text-[0.88rem]">
@@ -29,7 +28,7 @@ const ClientsAddress = () => {
           ></Input>
         </div>
         <Button
-          className="cursor-pointer flex items-center decoration-white justify-center bg-slate-950"
+          className="cursor-pointer flex items-center decoration-white justify-center bg-current"
           leftIcon={
             <Img
               className="h-4 mr-1 my-0.5"
@@ -39,9 +38,10 @@ const ClientsAddress = () => {
           }
           shape="round"
           size="md"
+          color="--grey_dark_01"
           variant="outline"
         >
-        <div className="text-white">
+        <div className="text-white textwhite">
           Add Address
         </div>
         </Button>
@@ -63,7 +63,7 @@ const ClientsAddress = () => {
                   85123,United States
                 </p>
               </div>
-              <div className="flex flex-row items-center justify-start gap-[0.63rem] text-[0.75rem]">
+              <div className="flex flex-row items-center bg-[--light_grey_shade_01] justify-start gap-[0.63rem] text-[0.75rem]">
                 <button className="rounded-lg bg-white flex flex-row items-center justify-center py-[0.38rem] px-[0.5rem] gap-[0.25rem] border-[1px] border-solid border-promoxcrm-dark-10">
                   <img
                     className="w-[1rem] h-[1rem] overflow-hidden shrink-0"
@@ -86,7 +86,7 @@ const ClientsAddress = () => {
                 </button>
               </div>
             </div>
-            <div className="self-stretch bg-[--light_grey_shade_01] rounded-lg bg-current flex flex-row items-end justify-between p-[1rem]">
+            <div className="self-stretch bg-[--light_grey_shade_01] rounded-lg  flex flex-row items-end justify-between p-[1rem]">
               <div className="leading-[150%] inline-block w-[12.31rem] shrink-0">
                 <p className="m-0 text-[1.13rem] font-semibold">
                   Nike US Limited
